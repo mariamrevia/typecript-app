@@ -1,38 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+
 .App {
-  text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #AAC4FF;
+    font-family: "Neutcha", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: "Neutcha", cursive;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.taskInput {
+    display: flex;
+
+    margin-top: 40px;
+    height: 60px;
+    width: 700px;
+    border-radius: 20px;
+    color: #7D6E83;
+    border-color: none;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px #B7C4CF;
+    outline: #AAC4FF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.taskInput:focus {
+    box-shadow:0 0 10px;
+    z-index: 2;
 }
 
-.App-link {
-  color: #61dafb;
+
+.goBtn {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    margin-top: 40px;
+    border: none;
+    background-color: #554994;
+    color: white;
+    box-shadow: inset 0 0 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.goBtn:focus {
+    box-shadow: 0 0 10px;
+}
+.inputForm {
+    display: flex;
+    height: 100px;
+    width: 800px;
+    justify-content: center;
+}
+
+.inputFiledDiv {
+    display: flex;
+    height: 100px;
+    width: 800px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}
+
+
+@media (max-width:400px) {
+    .heading {
+        margin-top: 15px;
+        font-size: 35px;
+
+    }
+
+
 }
