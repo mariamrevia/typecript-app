@@ -5,18 +5,18 @@ import { Interface } from 'readline'
 interface Props {
     todo:string;
     setTodo:React.Dispatch<React.SetStateAction<string>>;
-
+    handleAddedTask:(e:React.FormEvent) =>void
 }
 
 
 
 
-const InputField = ({todo,setTodo}:Props) => {
+const InputField = ({todo,setTodo,handleAddedTask}:Props) => {
 
   return (
     <div className='inputFiledDiv'>
 
-    <form className='inputForm'>
+    <form className='inputForm' onSubmit={handleAddedTask}>
     <div className='div1'>
     <input
     type="text" 
