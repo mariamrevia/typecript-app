@@ -114,8 +114,69 @@
 /* ------todolist------- */
 
 
+.todoslist--div {
 
+    display: flex;
+    width: 90%;
+    height:60px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: yellow;
 
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.icons--div {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    margin-right:7% ;
+    gap:15%;
+    justify-content: space-between;
+    
+}
+
+.todoslist--form {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  
+ border-radius: 5px;
+}
+
+.activelist-div {
+    background-color:#1980af ;
+}
+.tods--div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+
+}
+.todos-single {
+    font-size: 22px;
+    margin-left: 5%;
+    display: flex;
+
+}
+.editInput {
+    display: flex;
+    background-color:rgb(196, 241, 178);
+    border:none;
+   outline: rgb(234, 238, 124);
+    height: 40px;
+    border-radius: 4px;
+
+    
+    font-size: 23px;
+    margin-left: 5%;
+}
 @media (max-width:400px) {
     .heading {
         margin-top: 15px;
