@@ -50,14 +50,8 @@
     height: 200px;
 }
 
-.tods--div {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    flex-wrap: wrap;
 
 
-}
 
 .goBtn {
 
@@ -74,14 +68,14 @@
     border: none;
     background-color: #554994;
     color: white;
-    box-shadow:  0 0 5px black;
+    box-shadow: 0 0 5px black;
 }
 
 
 
 .goBtn:active {
     transform: scale(0.4);
- transition: 0.7s;
+    transition: 0.7s;
     box-shadow: 0 0 5px black;
 }
 
@@ -93,10 +87,57 @@
     align-items: center;
 }
 
+.container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+
+
+}
+
+.todos {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: #BDF2D5;
+    border-radius: 10px;
+
+}
+
+.todos-remove {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: #554994;
+    border-radius: 10px;
+
+}
+
+.activeheader {
+    font-size: 25px;
+    color: #554994;
+    font-weight: 600;
+    align-self: center;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.completedheader {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    align-self: center;
+    width: 90%;
+    margin-top: 10px;
+
+}
+
 .inputFiledDiv {
     display: flex;
     height: 100px;
-    width:100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -117,8 +158,8 @@
 .todoslist--div {
 
     display: flex;
-    width: 90%;
-    height:60px;
+    width: 100%;
+    height: 60px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -126,63 +167,118 @@
 
     margin-top: 10px;
     border-radius: 10px;
+    transition: 0.2s;
 }
 
 .icons--div {
     display: flex;
     width: 15%;
     flex-direction: row;
-    margin-right:7% ;
-    gap:15%;
+    margin-right: 7%;
+    gap: 15%;
     justify-content: space-between;
-    
+
 }
 
 .todoslist--form {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     align-items: center;
     justify-content: center;
-  
- border-radius: 5px;
+
+    border-radius: 5px;
+   
 }
 
+
 .activelist-div {
-    background-color:#1980af ;
+    background-color: #1980af;
 }
+
 .tods--div {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    color: #554994;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
    
 
+
 }
+
+.todoslist--div:hover {
+
+    box-shadow: 0 0 3px 2px rgb(240, 240, 240);
+    transform: scale(1.03);
+}
+
 .todos-single {
     font-size: 22px;
     margin-left: 5%;
     display: flex;
-
+   
 }
+
+
 .editInput {
     display: flex;
-    background-color:rgb(196, 241, 178);
-    border:none;
-   outline: rgb(234, 238, 124);
+    background-color: yellow;
+    border: none;
+    outline: rgb(234, 238, 124);
     height: 40px;
     border-radius: 4px;
-
-    
+    color: #554994;
+    font-family: "neucha";
+    font-weight: 800;
+    letter-spacing: 2px;
     font-size: 23px;
     margin-left: 5%;
+
 }
-@media (max-width:400px) {
+
+
+
+@media (max-width:700px) {
     .heading {
         margin-top: 15px;
         font-size: 35px;
 
     }
 
+    .todoslist--div {
+        width: 100%;
+
+    }
+
+    .todoslist--form {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+        flex-direction: column;
+
+
+    }
+
+    .todos {
+
+        width: 100%;
+
+    }
+
+    .todos-remove {
+        width: 100%;
+    }
 
 }
